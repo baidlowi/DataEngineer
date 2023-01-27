@@ -172,14 +172,18 @@ In your VM on GCP install Terraform. Copy the files from the course repo here to
 	```
 
 9. Modify the files as necessary to create a GCP Bucket and Big Query Dataset.
-	- [main.tf](https://github.com/baidlowi/DataEngineer/blob/main/1.%20Introduction%20GCP%2C%20Docker%2C%20Postgre%2C%20Terraform/main.tf)
-	- [variables.tf](https://github.com/baidlowi/DataEngineer/blob/main/1.%20Introduction%20GCP%2C%20Docker%2C%20Postgre%2C%20Terraform/variables.tf)
+	- [main.tf](../1.%20Introduction%20GCP%2C%20Docker%2C%20Postgre%2C%20Terraform/terraform/main.tf)
+	- [variables.tf](../1.%20Introduction%20GCP%2C%20Docker%2C%20Postgre%2C%20Terraform/terraform/variables.tf)
 
 ## Question 1. 
 ### Creating Resources After updating the main.tf and variable.tf files run:
-
-	$ terraform init && apply
-
+```
+	$ terraform init 
+```
+```
+  $ terraform apply
+```
+    
 Paste the output of this command into the homework submission form.
 >Answer: 
 ```

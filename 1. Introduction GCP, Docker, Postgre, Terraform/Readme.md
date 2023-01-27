@@ -20,8 +20,8 @@
 	```
 
 9. Modify the files as necessary to create a GCP Bucket and Big Query Dataset.
-	- [main.tf](https://github.com/baidlowi/DataEngineer/blob/main/1.%20Introduction%20GCP%2C%20Docker%2C%20Postgre%2C%20Terraform/main.tf)
-	- [variables.tf](https://github.com/baidlowi/DataEngineer/blob/main/1.%20Introduction%20GCP%2C%20Docker%2C%20Postgre%2C%20Terraform/variables.tf)
+	- [main.tf](../1.%20Introduction%20GCP%2C%20Docker%2C%20Postgre%2C%20Terraform/terraform/main.tf)
+	- [variables.tf](../1.%20Introduction%20GCP%2C%20Docker%2C%20Postgre%2C%20Terraform/terraform/variables.tf)
 
 ## Run Terraform
 - we can only 1 to run it 
