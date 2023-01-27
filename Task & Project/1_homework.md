@@ -155,7 +155,7 @@ In your VM on GCP install Terraform. Copy the files from the course repo here to
 ## Requirement pre-run
 1. Install Terrform.
 	```
-	$ sudo apt install terraform
+	$ pip install terraform
 	```
 2. Install Google Cloud SDK.
 3. Create GCP Account with googleskillsboost in 5 hour.
@@ -171,11 +171,12 @@ In your VM on GCP install Terraform. Copy the files from the course repo here to
 	$ gcloud auth application-default login
 	```
 
-### Modify the files as necessary to create a GCP Bucket and Big Query Dataset.
-- [main.tf](../1. Introduction GCP, Docker, Postgre, Terraform/main.tf)
-- [variables.tf](baidlowi/DataEngineer/1. Introduction GCP, Docker, Postgre, Terraform/variables.tf)
+9. Modify the files as necessary to create a GCP Bucket and Big Query Dataset.
+	- [main.tf](https://github.com/baidlowi/DataEngineer/blob/main/1.%20Introduction%20GCP%2C%20Docker%2C%20Postgre%2C%20Terraform/main.tf)
+	- [variables.tf](https://github.com/baidlowi/DataEngineer/blob/main/1.%20Introduction%20GCP%2C%20Docker%2C%20Postgre%2C%20Terraform/variables.tf)
 
-### Question 1. Creating Resources After updating the main.tf and variable.tf files run:
+## Question 1. 
+### Creating Resources After updating the main.tf and variable.tf files run:
 
 	$ terraform init && apply
 
@@ -241,7 +242,7 @@ Terraform will perform the following actions:
       + force_destroy               = true
       + id                          = (known after apply)
       + location                    = "US-CENTRAL1"
-      + name                        = "dtc_data_lake_qwiklabs-gcp-04-73a4af44af08"
+      + name                        = "de_data_lake_qwiklabs-gcp-04-73a4af44af08"
       + project                     = (known after apply)
       + public_access_prevention    = (known after apply)
       + self_link                   = (known after apply)
@@ -284,7 +285,7 @@ Do you want to perform these actions?
 google_bigquery_dataset.dataset: Creating...
 google_storage_bucket.data-lake-bucket: Creating...
 google_bigquery_dataset.dataset: Creation complete after 1s [id=projects/qwiklabs-gcp-04-73a4af44af08/datasets/trips_data_all]
-google_storage_bucket.data-lake-bucket: Creation complete after 4s [id=dtc_data_lake_qwiklabs-gcp-04-73a4af44af08]
+google_storage_bucket.data-lake-bucket: Creation complete after 4s [id=de_data_lake_qwiklabs-gcp-04-73a4af44af08]
 
 Apply complete! Resources: 2 added, 0 changed, 0 destroyed.
 ```
