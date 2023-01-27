@@ -51,11 +51,11 @@ wheel      0.38.4
 Run Postgres and load data as shown in the videos
 We'll use the green taxi trips from January 2019:
 
-```wget https://github.com/DataTalksClub/nyc-tlc-data/releases/download/green/green_tripdata_2019-01.csv.gz```
+`wget https://github.com/DataTalksClub/nyc-tlc-data/releases/download/green/green_tripdata_2019-01.csv.gz`
 
 You will also need the dataset with zones:
 
-```wget https://s3.amazonaws.com/nyc-tlc/misc/taxi+_zone_lookup.csv```
+`wget https://s3.amazonaws.com/nyc-tlc/misc/taxi+_zone_lookup.csv`
 
 Download this data and put it into Postgres (with jupyter notebooks or with a pipeline)
 
