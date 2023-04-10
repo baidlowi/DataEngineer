@@ -9,7 +9,7 @@ Google Data Trends is a tool provided by Google that allows users to explore and
 
 ## Solution Overview
 
-Google Data Trends.png
+![Google Data Trends](https://user-images.githubusercontent.com/79616397/230936031-9929d991-d18f-4474-8549-55c25e9b3a13.png)
 
 This project wanna get data daily trends in country Indonesia and get insigths dashboard frfom trending topics in this country
 
@@ -76,16 +76,18 @@ or for daemonized run
     ```
 4. Access the Prefect webserver through web browser on `localhost:4200` and create block `GCS Bucket` (with name GCS Bucket) and `GCS Credentials`(from file key-account.json)
    
-![Airflow Webserver UI](docs/airflow-ui.png)
+![image](https://user-images.githubusercontent.com/79616397/230938723-e6147a2e-9486-4b94-b4c9-50c70d4a0a41.png)
 
-![Airflow Data Ingestion DAG](docs/airflow-ingestion.png)
+![image](https://user-images.githubusercontent.com/79616397/230938893-49026aa4-20cc-4153-9922-49849426003b.png)
 
-![Airflow Datawarehouse DAG](docs/airflow-dw.png)
+![image](https://user-images.githubusercontent.com/79616397/230939493-28038092-c69e-45a9-8fe5-da3f52a99ed7.png)
 
 5. Run Workflow `parent-workflow.py` and schedule it in every night
     ```
     prefect deployment build parent-workflow.py:etl_parent_flow -n "Parameterized ETL"
     ```
+    ![image](https://user-images.githubusercontent.com/79616397/230938319-f8cab849-eb08-4fa4-8c43-86b6c89b4b73.png)
+    ![image](https://user-images.githubusercontent.com/79616397/230939662-a4a37bd5-58af-4ff3-9625-8de1f5aebb14.png)
 
 6. Run prefect agent to start queue schedule
     ```
@@ -94,12 +96,12 @@ or for daemonized run
 
 6. After done, check GCP Console, both in Google Cloud Storage and BigQuery to check the data.
 
-![BigQuery Datasets](docs/bq-dataset.png)
+![image](https://user-images.githubusercontent.com/79616397/230939956-b3e6e358-26d0-4a67-80a0-6962915dda46.png)
 
-![BigQuery Query Result](docs/bq-query.png)
+![Uploading image.png…]()
 
 ### Part 3: Visualize Data
-1. Open Looker Website or Tableau Desktop, and connect to BigQuery.
+1. Open Looker Studio or Tableau Desktop, and connect to BigQuery.
 2. Authorize credentials service aaccount from `account-key.json`
 2. Visualize the dashboard, publish to Public.
 
