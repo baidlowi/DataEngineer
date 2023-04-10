@@ -76,10 +76,13 @@ Then, replace `de-1199` in `.env` file to project ID.
     ```
     docker-compose up
     ```
-    
-4. Access the Prefect webserver through web browser on `localhost:4200` and create block `GCS Bucket` (with name GCS Bucket) and `GCS Credentials`(from file google_credential.json)
-    ![image](https://user-images.githubusercontent.com/79616397/230938723-e6147a2e-9486-4b94-b4c9-50c70d4a0a41.png)
-    ![image](https://user-images.githubusercontent.com/79616397/230938893-49026aa4-20cc-4153-9922-49849426003b.png)
+or for daemonized run
+    ```
+    docker-compose up -d
+    ```
+4. Access the Prefect webserver through web browser on `localhost:4200` and create block `GCS Bucket` (with name GCS Bucket) and `GCS Credentials`(from file `google_credential.json`)
+   
+![Airflow Webserver UI](docs/airflow-ui.png)
 
 5. Run Workflow `parent-workflow.py` and schedule it in every night
     ```
@@ -100,7 +103,7 @@ Then, replace `de-1199` in `.env` file to project ID.
 
 
 ### Part 3: Visualize Data
-1. Open Looker Studio or Tableau Desktop, and connect to BigQuery.
+1. Open Looker Website or Tableau Desktop, and connect to BigQuery.
 2. Authorize credentials service aaccount from `google_credential.json`
 2. Visualize the dashboard, publish to Public.
 
