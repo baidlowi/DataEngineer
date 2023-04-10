@@ -59,7 +59,8 @@ Prefect: Workflow Orchestration
     terraform apply
     ```
 9. Check GCP console to see newly-created resource `GCS Bucket`, `Big Query Dataset`, and `Virtual Machine`.
-<br>
+
+
 ### Part 2: Run Prefect to Scrape, Ingest, and Warehouse Data
 1. Go to source directory
     ```
